@@ -1,0 +1,48 @@
+@keyframes load {
+    0% {
+      width: 0;
+      background: #FF2330;
+    }
+    25% {
+      width: 25%;
+      background:  #FF2330;
+    }
+  
+    50% {
+      width: 50%;
+      background:  #FF2330;
+    }
+    75% {
+      width: 75%;
+      background:  #FF2330;
+    }
+  
+    100% {
+      width: 100%;
+      background:  #FF2330;
+    }
+  
+  }
+
+  .remove-loading-bar {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.page-exit {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+
+
+.post-item{
+  transition: 0.5s;
+  cursor: pointer;
+}
+.post-item:hover{
+  transform: scale(0.9);
+
+}

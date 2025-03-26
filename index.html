@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel Hub</title>
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container-loading-bar">
+        <img
+        id="gif-spider-man"
+        src="./assets/gif_spider_man.gif"
+        alt="Gif Spider Man"
+      />
+      <img
+        class="logo-loading-bar"
+        src="./assets/logo.svg"
+        alt="Logo MarvelHub"
+      />
+      <div class="loading-bar"></div>
+    </div>
+    <style>
+
+      body{
+        background-color: #fff;
+        margin: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 10s ease-in-out;
+      }
+      #gif-spider-man {
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        justify-self: center;
+      }
+
+      .container-loading-bar {
+        display: grid;
+        position: relative;
+        width: 50%;
+        padding: 6px;
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .logo-loading-bar{
+        justify-self: center;
+      }
+      .loading-bar {
+        padding: 1px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        animation: load 5s forwards;
+      }
+    </style>
+    <script src="./scripts/loading.js"></script>
+  </body>
+</html>
