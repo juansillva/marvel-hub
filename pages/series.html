@@ -7,37 +7,49 @@
     <link rel="shortcut icon" href="../assets/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/animations.css" />
-    <link rel="stylesheet" href="../styles/series.css">
+    <link rel="stylesheet" href="../styles/series.css" />
   </head>
   <body>
     <aside class="sidebar">
-      <img id="logo" src="../assets/logo-marvel-hub.svg" alt="" />
-      <nav>
-          <img id="Home" src="../assets/icons/Home.svg" alt="" />
-          <a href="./home.html">Home</a>
-          <img id="Filmes" src="../assets/icons/Video.svg" alt="" />
-          <a href="./filmes.html">Filmes</a>
-          <img id="Series" src="../assets/icons/Retro TV.svg" alt="" />
-          <a href="./series.html">Séries</a>
-      </nav>
-      <hr style=" width: 208px;  display: flex; justify-self: center; border: none; height: 0.2px; background-color: #505050">
-      <nav>
-        <img id="Notícias" src="../assets/icons/Noticeboard.svg" alt="" />
-        <a href="./home.html">Notícias</a>
-        <img id="Personagens" src="../assets/icons/Iron Man.svg" alt="" />
-        <a href="./filmes.html">Personagens</a>
-    </nav>
-    <hr style=" width: 208px;  display: flex; justify-self: center; border: none; height: 0.2px; background-color: #505050">
-    <nav>
-      <a id="marvel" href="./filmes.html">Marvel</a>
-      <img src="../assets/icons/External Link.svg" alt="" />
-    </nav>
-    <hr style=" width: 208px;  display: flex; justify-self: center; border: none; height: 0.2px; background-color: #505050">
-    
+      <div class="content-sidebar">
+        <img id="logo" src="../assets/logo-marvel-hub.svg" alt="" />
+        <nav>
+          <ul>
+            <li>
+              <img src="../assets/icons/Home.svg" alt="Ícone Home" />
+              <a href="./home.html">Home</a>
+            </li>
+            <li>
+              <img src="../assets/icons/Video.svg" alt="Ícone Filmes" />
+              <a href="./filmes.html">Filmes</a>
+            </li>
+            <li>
+              <img src="../assets/icons/Retro TV.svg" alt="Ícone Séries" />
+              <a href="./series.html">Séries</a>
+            </li>
+            <hr />
+            <li>
+              <img id="Notícias" src="../assets/icons/Noticeboard.svg" alt="" />
+              <a href="./home.html">Notícias</a>
+            </li>
+            <li>
+              <img id="Personagens" src="../assets/icons/Iron Man.svg" alt="" />
+              <a href="./filmes.html">Heróis</a>
+            </li>
+            <hr />
+            <li>
+              <a href="./filmes.html">Marvel</a>
+              <img id="Marvel" src="../assets/icons/External Link.svg" alt="" />
+            </li>
+          </ul>
+        </nav>
+      </div>
     </aside>
     <main>
       <header>
         <div class="content-header">
+          <img id="menu" src="../assets/icons/Menu.svg" alt="" width="30px" />
+          <img id="logo-mobile" src="../assets/logo-marvel-hub.svg" alt="" />
           <div class="search-container">
             <img src="../assets/icons/Search.svg" alt="" />
             <input
@@ -47,64 +59,107 @@
               placeholder="Buscar por filme ou série"
             />
           </div>
-          <img src="../assets/icons/Notification.svg" alt="">
-          <img src="../assets/icons/Heart.svg" alt="">
           <div class="user-actions">
             <a id="create" href="">Criar Conta</a>
             <a id="to-enter" href="">Entrar</a>
-            <a id="signature" href="">Assinar Marvel Hub</a>
+            <a id="signature" href="">Assinaturas</a>
           </div>
         </div>
       </header>
-      <hr style=" width: 100%;  display: flex; justify-self: center; border: none; height: 0.2px; background-color: #505050">
-      <div class="title-section">
-        <h2 style="font-size: 24px;">Séries</h2>
+      <hr
+        style="
+          width: 100%;
+          display: flex;
+          justify-self: center;
+          border: none;
+          height: 0.2px;
+          background-color: #505050;
+        "
+      />
+      <div class="box-title-section">
+        <div class="title-section">
+          <div class="content-title">
+            <h2>Séries</h2>
+          </div>
+        </div>
+        <p>Nesta sessão você encontra todas as séries disponíveis</p>
       </div>
-      <p>Nesta sessão você encontra todas as séries disponíveis</p>
-      <hr style=" width: 100%;  display: flex; justify-self: center; border: none; height: 0.2px; background-color: #505050">
-      <div class="title-section">
-        <img src="../assets/icons/Video_White.svg" alt="" />
-        <h2>Destaque</h2>
-        <span>Séries</span>
+
+      <hr
+        style="
+          width: 100%;
+          display: flex;
+          justify-self: center;
+          border: none;
+          height: 0.2px;
+          background-color: #505050;
+        "
+      />
+      <div class="box-title-section">
+        <div class="title-section">
+          <div class="content-title">
+            <img src="../assets/icons/Video.svg" alt="" />
+            <h2>Destaque</h2>
+          </div>
+          <a href="../pages/filmes.html">Ver Todos</a>
+        </div>
+        <p>Assista ou veja o trailer da série em destaque</p>
       </div>
-      <p>Assista ou veja o trailer da série em destaque</p>
 
       <div class="movie">
-       <img src="../assets/logo-filme/logo-demolidor.png" width="400" height="300">
-        <div class="container-movie-info">
-          <div class="movie-info">
-            <img src="../assets/icons/Calendar_Image.svg" alt="" />
-            <span>2025</span>
+        <div class="container-movie">
+          <img src="../assets/logo-filme/logo-capitao-america 1.svg" />
+          <div class="container-movie-info">
+            <div class="movie-info">
+              <img src="../assets/icons/Calendar_Image.svg" alt="" />
+              <span>2025</span>
+            </div>
+            <div class="movie-info">
+              <span>Temporada 1</span>
+            </div>
           </div>
-          <div class="movie-info">
-            <img src="../assets/icons/Clock.svg" alt="" />
-            <span>Temporada 1</span>
-          </div>
-        </div>
-        <p>
-          Matt Murdock, um advogado cego com habilidades fantásticas, luta por justiça através de seu agitado escritório de advocacia, enquanto o ex-chefe do crime Wilson Fisk busca seus próprios empreendimentos políticos em Nova Iorque. Quando suas identidades passadas começam a emergir, seus caminhos se cruzam perigosamente.
-        </p>
-        <div class="container-movie-actions">
-          <div class="action-play">
-            <img src="../assets/icons/Play.svg" alt="" />
-            <a href="">Assistir agora</a>
-          </div>
-          <div class="action-trailer">
-            <a href="">Ver Trailer</a>
-            <img src="../assets/icons/Forward.svg" alt="" />
+
+          <p id="text-movie">
+            Matt Murdock, um advogado cego com habilidades fantásticas, luta por
+            justiça através de seu agitado escritório de advocacia, enquanto o
+            ex-chefe do crime Wilson Fisk busca seus próprios empreendimentos
+            políticos em Nova Iorque. Quando suas identidades passadas começam a
+            emergir, seus caminhos se cruzam perigosamente.
+          </p>
+          <div class="container-movie-actions">
+            <div id="action-play">
+              <img src="../assets/icons/Play.svg" alt="" />
+              <a href="">Assistir agora</a>
+            </div>
+            <div id="action-trailer">
+              <a href="">Ver Trailer</a>
+              <img src="../assets/icons/Forward.svg" alt="" />
+            </div>
           </div>
         </div>
       </div>
-      <div class="title-section">
-        <img src="../assets/icons/Border All.svg" alt="" />
-        <h2>Todas as Séries</h2>
-        <span>Séries</span>
+
+      <div class="box-title-section">
+        <div class="title-section">
+          <div class="content-title">
+            <img src="../assets/icons/All.svg" alt="" />
+            <h2>Todas as Séries</h2>
+          </div>
+        </div>
+        <p>Nesta sessão você encontra todas as séries disponíveis</p>
       </div>
-      <p>Confira todas as séries disponíveis</p>
-      <hr style=" width: 100%;  display: flex; justify-self: center; border: none; height: 0.2px; background-color: #505050">
+      <hr
+        style="
+          width: 100%;
+          display: flex;
+          justify-self: center;
+          border: none;
+          height: 0.2px;
+          background-color: #505050;
+        "
+      />
 
       <div class="all">
-       
         <div class="post-item">
           <img
             src="../assets/posts/series/post_demolidor.jpg"
@@ -118,7 +173,6 @@
           </div>
         </div>
 
-           
         <div class="post-item">
           <img
             src="../assets/posts/series/post_homem_aranha_desenho.jpg"
@@ -132,7 +186,6 @@
           </div>
         </div>
 
-           
         <div class="post-item">
           <img
             src="../assets/posts/series/post_e_se.jpg"
@@ -146,7 +199,6 @@
           </div>
         </div>
 
-           
         <div class="post-item">
           <img
             src="../assets/posts/series/post_agatha.jpg"
@@ -160,7 +212,6 @@
           </div>
         </div>
 
-           
         <div class="post-item">
           <img
             src="../assets/posts/series/post_x_men.jpg"
@@ -174,7 +225,6 @@
           </div>
         </div>
 
-           
         <div class="post-item">
           <img
             src="../assets/posts/series/post_echo.jpg"
@@ -188,7 +238,6 @@
           </div>
         </div>
 
-           
         <div class="post-item">
           <img
             src="../assets/posts/series/post_loki.jpg"
@@ -202,7 +251,6 @@
           </div>
         </div>
 
-           
         <div class="post-item">
           <img
             src="../assets/posts/series//post_invasao_secreta.jpg"
@@ -216,7 +264,6 @@
           </div>
         </div>
 
-           
         <div class="post-item">
           <img
             src="../assets/posts/series/post_gaviao_arqueiro.jpg"
@@ -230,7 +277,6 @@
           </div>
         </div>
 
-           
         <div class="post-item">
           <img
             src="../assets/posts/series//post_loki_1.jpg"
@@ -244,7 +290,6 @@
           </div>
         </div>
 
-           
         <div class="post-item">
           <img
             src="../assets/posts/series//post_falcao.jpg"
@@ -258,7 +303,6 @@
           </div>
         </div>
 
-           
         <div class="post-item">
           <img
             src="../assets/posts/series/post_wanda_vision.jpg"
@@ -273,13 +317,26 @@
         </div>
       </div>
 
-      <div class="title-section">
-      <img src="../assets/icons/Trophy.svg" alt="" />
-      <h2>Top 3 Séries</h2>
-      <span>Séries</span>
-    </div>
-      <p>As séries mais assistidas da Marvel!</p>
-      <hr style=" width: 100%;  display: flex; justify-self: center; border: none; height: 0.2px; background-color: #505050">
+      <div class="box-title-section">
+        <div class="title-section">
+          <div class="content-title">
+            <img src="../assets/icons/Trophy.svg" alt="" />
+            <h2>Top 3 Séries</h2>
+          </div>
+          <a href="../pages/filmes.html">Ver Todos</a>
+        </div>
+        <p>As séries mais assistidas da Marvel</p>
+      </div>
+      <hr
+        style="
+          width: 100%;
+          display: flex;
+          justify-self: center;
+          border: none;
+          height: 0.2px;
+          background-color: #505050;
+        "
+      />
 
       <div class="top-3">
         <div class="post-item">
@@ -318,13 +375,12 @@
             alt=""
           />
           <div>
-            <span>Homem-Aranha:<br>Sem Volta Pra Casa</span>
+            <span>Homem-Aranha:<br />Sem Volta Pra Casa</span>
             <span>2023 3h1min</span>
           </div>
         </div>
       </div>
-
     </main>
+    <script src="../scripts/app.js"></script>
   </body>
-  </html>
-      
+</html>

@@ -1,33 +1,32 @@
 @keyframes load {
-    0% {
-      width: 0;
-      background: #FF2330;
-    }
-    25% {
-      width: 25%;
-      background:  #FF2330;
-    }
-  
-    50% {
-      width: 50%;
-      background:  #FF2330;
-    }
-    75% {
-      width: 75%;
-      background:  #FF2330;
-    }
-  
-    100% {
-      width: 100%;
-      background:  #FF2330;
-    }
-  
+  0% {
+    width: 0;
+    background: #ff2330;
+  }
+  25% {
+    width: 25%;
+    background: #ff2330;
   }
 
-  .remove-loading-bar {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  50% {
+    width: 50%;
+    background: #ff2330;
+  }
+  75% {
+    width: 75%;
+    background: #ff2330;
+  }
+
+  100% {
+    width: 100%;
+    background: #ff2330;
+  }
+}
+
+.remove-loading-bar {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .page-exit {
@@ -36,13 +35,62 @@
   transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
 }
 
-
-
-.post-item{
+.post-item {
   transition: 0.5s;
   cursor: pointer;
 }
-.post-item:hover{
-  transform: scale(0.9);
 
+#create {
+  transition: 0.5s;
+}
+
+#to-enter {
+  transition: 0.5s;
+}
+
+#signature {
+  transition: 0.5s;
+}
+
+#create:hover {
+  background-color: #505050;
+}
+
+#to-enter:hover {
+  background-color: #c6c6c6;
+  color: #eeeeee;
+}
+
+#signature:hover {
+  background-color: #b40e19;
+}
+
+nav ul li {
+  transition: 0.5s;
+}
+
+nav ul li:hover {
+  background: #212121;
+  transition: 0.5s;
+}
+
+#action-play:hover {
+  background-color: #8d0d15;
+  transition: 0.5s;
+}
+#action-trailer:hover {
+  background-color: #505050;
+  transition: 0.5s;
+}
+
+#action-trailer a:hover {
+  color: #eeeeee;
+}
+
+.movie {
+  transition: 1s;
+}
+.movie:hover {
+  opacity: 75%;
+  transition: 0.5s;
 }
