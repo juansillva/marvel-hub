@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/animations.css" />
     <link rel="stylesheet" href="../styles/filmes.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   </head>
   <body>
     <aside class="sidebar">
       <div class="content-sidebar">
         <img id="logo" src="../assets/logo-marvel-hub.svg" alt="" />
+        <img class="close-sidebar" src="../assets/icons/ArrowBack.svg" alt="" />
         <nav>
           <ul>
             <li>
@@ -39,7 +44,6 @@
             <hr />
             <li>
               <a href="./filmes.html">Marvel</a>
-              <img id="Marvel" src="../assets/icons/External Link.svg" alt="" />
             </li>
           </ul>
         </nav>
@@ -49,7 +53,13 @@
       <header>
         <div class="content-header">
           <img id="menu" src="../assets/icons/Menu.svg" alt="" width="30px" />
-          <img id="logo-mobile" src="../assets/logo-marvel-hub.svg" alt="" />
+          <img
+            id="logo-mobile"
+            src="../assets/logo-mobile.svg"
+            alt=""
+            width="30px"
+            height="46px"
+          />
           <div class="search-container">
             <img src="../assets/icons/Search.svg" alt="" />
             <input
@@ -60,9 +70,8 @@
             />
           </div>
           <div class="user-actions">
-            <a id="create" href="">Criar Conta</a>
             <a id="to-enter" href="">Entrar</a>
-            <a id="signature" href="">Assinaturas</a>
+            <a id="create" href="">Criar Conta</a>
           </div>
         </div>
       </header>
@@ -82,7 +91,7 @@
             <h2>Filmes</h2>
           </div>
         </div>
-        <p>Nesta sessão você encontra todas as séries disponíveis</p>
+        <p>Nesta sessão você encontra todos os filmes disponíveis</p>
       </div>
 
       <hr
@@ -101,14 +110,17 @@
             <img src="../assets/icons/Video.svg" alt="" />
             <h2>Destaque</h2>
           </div>
-          <a href="../pages/filmes.html">Ver Todos</a>
+          <a id="see-all" href="../pages/filmes.html">Ver Todos</a>
         </div>
         <p>Assista ou veja o trailer do filme em destaque</p>
       </div>
 
       <div class="movie">
         <div class="container-movie">
-          <img src="../assets/logo-filme/logo-capitao-america 1.svg" />
+          <img
+            id="logo-filme"
+            src="../assets/logo-filme/logo-capitao-america 1.svg"
+          />
           <div class="container-movie-info">
             <div class="movie-info">
               <img src="../assets/icons/Calendar_Image.svg" alt="" />
@@ -159,160 +171,196 @@
         "
       />
 
-      <div class="all">
-        <div class="post-item">
+      <div data-aos="fade-up" class="all">
+        <div class="post-item hvr-float-shadow">
           <img
             src="../assets/posts/filmes/post_capitao_america.jpeg"
             width="160"
             height="238"
             alt=""
           />
-          <div>
-            <span>Capitão América: O Admirável <br />Mundo Novo</span>
-            <span>2025 3h1min</span>
+          <div class="box-movie-details">
+            <p>Capitão América: O Admirável Mundo Novo</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2025</span>
+              <span><i class="far fa-clock"></i>2h58min</span>
+            </div>
           </div>
         </div>
 
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <img
             src="../assets/posts/filmes/post_deadpool_wolwerine.jpg"
             width="160"
             height="238"
             alt=""
           />
-          <div>
-            <span>Deadpool & Wolverine</span>
-            <span>2024 </span>
+          <div class="box-movie-details">
+            <p>Deadpool & Wolverine</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2024</span>
+              <span><i class="far fa-clock"></i>2h8min</span>
+            </div>
           </div>
         </div>
 
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <img
             src="../assets/posts/filmes/post_as_marvels.jpg"
             width="160"
             height="238"
             alt=""
           />
-          <div>
-            <span>Demolidor: Renascido</span>
-            <span>2025</span>
+          <div class="box-movie-details">
+            <p>As Marvels</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2023</span>
+              <span><i class="far fa-clock"></i>1h45min</span>
+            </div>
           </div>
         </div>
 
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <img
             src="../assets/posts/filmes/post_guardioes_da_galaxia.jpg"
             width="160"
             height="238"
             alt=""
           />
-          <div>
-            <span>Demolidor: Renascido</span>
-            <span>2025</span>
+          <div class="box-movie-details">
+            <p>Guardiões da Galáxia: Vol. 3</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2023</span>
+              <span><i class="far fa-clock"></i>2h29min</span>
+            </div>
           </div>
         </div>
 
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <img
             src="../assets/posts/filmes/post_homem_formiga.jpeg"
             width="160"
             height="238"
             alt=""
           />
-          <div>
-            <span>Demolidor: Renascido</span>
-            <span>2025</span>
+          <div class="box-movie-details">
+            <p>Homem Formiga e a Vespa: Quantumania</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2023</span>
+              <span><i class="far fa-clock"></i>2h5min</span>
+            </div>
           </div>
         </div>
 
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <img
             src="../assets/posts/filmes/post_pantera_negra_wf.jpg"
             width="160"
             height="238"
             alt=""
           />
-          <div>
-            <span>Demolidor: Renascido</span>
-            <span>2025</span>
+          <div class="box-movie-details">
+            <p>Pantera Negra: Wakanda Para Sempre</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2023</span>
+              <span><i class="far fa-clock"></i>2h42min</span>
+            </div>
           </div>
         </div>
 
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <img
             src="../assets/posts/filmes/post_homem_aranha_sem_volta_pra_casa.jpg"
             width="160"
             height="238"
             alt=""
           />
-          <div>
-            <span>Demolidor: Renascido</span>
-            <span>2025</span>
+          <div class="box-movie-details">
+            <p>Homem-Aranha: Sem Volta Pra Casa</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2021</span>
+              <span><i class="far fa-clock"></i>2h28min</span>
+            </div>
           </div>
         </div>
 
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <img
             src="../assets/posts/filmes/post_homem_aranha_longe_de_casa.webp"
             width="160"
             height="238"
             alt=""
           />
-          <div>
-            <span>Demolidor: Renascido</span>
-            <span>2025</span>
+          <div class="box-movie-details">
+            <p>Homem-Aranha: Longe de Casa</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2019</span>
+              <span><i class="far fa-clock"></i>2h10min</span>
+            </div>
           </div>
         </div>
 
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <img
             src="../assets/posts/filmes/post_vingadores_ultimato.jpg"
             width="160"
             height="238"
             alt=""
           />
-          <div>
-            <span>Demolidor: Renascido</span>
-            <span>2025</span>
+          <div class="box-movie-details">
+            <p>Vingadores: Ultimato</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2019</span>
+              <span><i class="far fa-clock"></i>3h1min</span>
+            </div>
           </div>
         </div>
 
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <img
             src="../assets/posts/filmes/post_capita_marvel.webp"
             width="160"
             height="238"
             alt=""
           />
-          <div>
-            <span>Demolidor: Renascido</span>
-            <span>2025</span>
+          <div class="box-movie-details">
+            <p>Capitã Marvel</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2019</span>
+              <span><i class="far fa-clock"></i>2h4min</span>
+            </div>
           </div>
         </div>
 
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <img
             src="../assets/posts/filmes/post_vingadores_guerra_infinita.jpeg"
             width="160"
             height="238"
             alt=""
           />
-          <div>
-            <span>Demolidor: Renascido</span>
-            <span>2025</span>
+          <div class="box-movie-details">
+            <p>Vingadores: Guerra Infinita</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2018</span>
+              <span><i class="far fa-clock"></i>2h29min</span>
+            </div>
           </div>
         </div>
 
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <img
             src="../assets/posts/filmes/post_pantera_negra.jpeg"
             width="160"
             height="238"
             alt=""
           />
-          <div>
-            <span>Demolidor: Renascido</span>
-            <span>2025</span>
+          <div class="box-movie-details">
+            <p>Pantera Negra</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2018</span>
+              <span><i class="far fa-clock"></i>2h15min</span>
+            </div>
           </div>
         </div>
       </div>
@@ -323,7 +371,7 @@
             <img src="../assets/icons/Trophy.svg" alt="" />
             <h2>Top 3 Filmes</h2>
           </div>
-          <a href="../pages/filmes.html">Ver Todos</a>
+          <a id="see-all" href="../pages/filmes.html">Ver Todos</a>
         </div>
         <p>Os filmes mais assistidos da Marvel</p>
       </div>
@@ -338,8 +386,8 @@
         "
       />
 
-      <div class="top-3">
-        <div class="post-item">
+      <div data-aos="fade-up" class="top-3">
+        <div class="post-item hvr-float-shadow">
           <h1>1</h1>
           <img
             src="../assets/posts/filmes/post_vingadores_ultimato.jpg"
@@ -347,13 +395,16 @@
             height="238"
             alt=""
           />
-          <div>
-            <span>Vindagores: Ultimato</span>
-            <span>2019</span>
+          <div class="box-movie-details">
+            <p>Vingadores: Ultimato</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2019</span>
+              <span><i class="far fa-clock"></i>2h58min</span>
+            </div>
           </div>
         </div>
 
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <h1>2</h1>
           <img
             src="../assets/posts/filmes/post_vingadores_guerra_infinita.jpeg"
@@ -361,12 +412,15 @@
             height="238"
             alt=""
           />
-          <div>
-            <span>Vingadores: Guerra Infinita</span>
-            <span>2018</span>
+          <div class="box-movie-details">
+            <p>Vingadores: Guerra Infinita</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2018</span>
+              <span><i class="far fa-clock"></i>2h29min</span>
+            </div>
           </div>
         </div>
-        <div class="post-item">
+        <div class="post-item hvr-float-shadow">
           <h1>3</h1>
           <img
             src="../assets/posts/filmes/post_homem_aranha_sem_volta_pra_casa.jpg"
@@ -374,13 +428,85 @@
             height="238"
             alt=""
           />
-          <div>
-            <span>Homem-Aranha: Sem Volta Pra Casa</span>
-            <span>2021</span>
+          <div class="box-movie-details">
+            <p>Homem-Aranha: Sem Volta Pra Casa</p>
+            <div id="movie-details">
+              <span><i class="far fa-calendar"></i>2021</span>
+              <span><i class="far fa-clock"></i>2h29min</span>
+            </div>
           </div>
         </div>
       </div>
+      <footer>
+        <div data-aos="fade-up" class="footer-container">
+          <div class="footer-column">
+            <img src="../assets/logo-marvel-hub.svg" alt="" />
+            <p>
+              O destino definitivo para fãs do universo Marvel. Explore filmes,
+              séries e novidades.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Filmes</a></li>
+              <li><a href="#">Séries</a></li>
+              <li><a href="#">Personagens</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Redes Sociais</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Contato</h3>
+            <ul>
+              <li>
+                <a href="https://github.com/juansillva" target="_blank"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/juuanandre" target="_blank"
+                  ><i class="fab fa-linkedin"></i> LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://wa.me/81996870361" target="_blank"
+                  ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                >
+              </li>
+              <li>
+                <a href="mailto:juuanandre722@gmail.com"
+                  ><i class="fas fa-envelope"></i> Email</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            Marvel Hub é um projeto acadêmico e de portfólio, desenvolvido por
+            Juan André. Não possui afiliação com a Marvel Studios ou Disney.
+          </p>
+          <p>
+            &copy; 2025 Marvel Hub. Todos os direitos sobre personagens e filmes
+            pertencem à Marvel Studios.
+          </p>
+        </div>
+      </footer>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="../scripts/app.js"></script>
   </body>
 </html>

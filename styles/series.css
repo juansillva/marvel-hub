@@ -12,6 +12,7 @@
   opacity: 1;
   z-index: -1;
   transition: 8s ease-in-out;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 .content-sidebar::after {
   content: "";

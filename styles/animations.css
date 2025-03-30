@@ -53,17 +53,13 @@
 }
 
 #create:hover {
-  background-color: #505050;
+  background-color: #b40e19;
 }
 
 #to-enter:hover {
   background-color: #c6c6c6;
-  color: #eeeeee;
 }
 
-#signature:hover {
-  background-color: #b40e19;
-}
 
 nav ul li {
   transition: 0.5s;
@@ -71,6 +67,11 @@ nav ul li {
 
 nav ul li:hover {
   background: #212121;
+  transition: 0.5s;
+}
+
+#action-play,
+#action-trailer {
   transition: 0.5s;
 }
 
@@ -93,4 +94,12 @@ nav ul li:hover {
 .movie:hover {
   opacity: 75%;
   transition: 0.5s;
+}
+
+#see-all {
+  transition: 0.5s;
+}
+
+#see-all:hover {
+  background-color: #505050;
 }
