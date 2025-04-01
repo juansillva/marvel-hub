@@ -60,7 +60,6 @@
   background-color: #c6c6c6;
 }
 
-
 nav ul li {
   transition: 0.5s;
 }
@@ -102,4 +101,12 @@ nav ul li:hover {
 
 #see-all:hover {
   background-color: #505050;
+}
+
+.comment-button {
+  transition: 0.5s;
+}
+
+.comment-button:hover {
+  background-color: #8d0d15;
 }
