@@ -1,10 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel Hub - Home</title>
+    <link rel="shortcut icon" href="../assets/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/animations.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="../styles/modelo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="content-sidebar">
+        <img class="close-sidebar" src="../assets/icons/ArrowBack.svg" alt="" />
+        <img id="logo" src="../assets/logo-marvel-hub.svg" alt="" />
+        <nav>
+          <ul>
+            <li>
+              <img src="../assets/icons/Home.svg" alt="Ícone Home" />
+              <a href="./home.html">Home</a>
+            </li>
+            <li>
+              <img src="../assets/icons/Video.svg" alt="Ícone Filmes" />
+              <a href="./filmes.html">Filmes</a>
+            </li>
+            <li>
+              <img src="../assets/icons/Retro TV.svg" alt="Ícone Séries" />
+              <a href="../pages/series.html">Séries</a>
+            </li>
+            <hr />
+            <li>
+              <img id="Notícias" src="../assets/icons/Noticeboard.svg" alt="" />
+              <a href="https://www.marvel.com/">Notícias</a>
+            </li>
+            <li>
+              <img id="Personagens" src="../assets/icons/Iron Man.svg" alt="" />
+              <a href="https://www.marvel.com/">Heróis</a>
+            </li>
+            <hr />
+            <li>
+              <a href="https://www.marvel.com/">Marvel</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="main-model">
+      <header>
+        <div class="content-header">
+          <img id="menu" src="../assets/icons/Menu.svg" alt="" width="30px" />
+          <img
+            id="logo-mobile"
+            src="../assets/logo-mobile.svg"
+            alt=""
+            width="30px"
+            height="46px"
+          />
+          <div class="search-container">
+            <img src="../assets/icons/Search.svg" alt="" />
+            <input
+              type="search"
+              name=""
+              id=""
+              placeholder="Buscar por filme ou série"
+            />
+          </div>
+          <div class="user-actions">
+            <a id="to-enter" href="">Entrar</a>
+            <a id="create" href="">Criar Conta</a>
+          </div>
+        </div>
+      </header>
+      <hr
+        style="
+          width: 100%;
+          display: flex;
+          justify-self: center;
+          border: none;
+          height: 0.2px;
+          background-color: #505050;
+        "
+      />
+      <br />
+
+      <div class="box-title-section">
+        <div class="title-section">
+          <div class="content-title">
+            <img src="../assets/icons/Video.svg" alt="" />
+            <h2>Filme</h2>
+          </div>
+          <a id="see-all" href="../pages/filmes.html">Ver Todos</a>
+        </div>
+        <p>
+          Explore os detalhes deste filme, desde a trama até o elenco e os
+          bastidores.
+        </p>
+      </div>
+
+      <div class="container-movie-model" data-id="deadpool-&-wolverine">
+        <div class="movie-model">
+          <div class="post-item">
+            <img src="../assets/posts/filmes/post_deadpool_wolwerine.jpg" />
+          </div>
+          <div class="box-model-info">
+            <h2>Deadpool & Wolverine</h2>
+            <div id="model-info">
+              <p>18</p>
+
+              <span style="color: #eeeeee"
+                ><i class="far fa-calendar" style="color: #eeeeee"></i>2024
+                |</span
+              >
+              <span style="color: #eeeeee"
+                ><i class="far fa-clock" style="color: #eeeeee"></i>2h8min
+              </span>
+            </div>
+
+            <li><i class="fas fa-clapperboard"></i>Diretor: Shawn Levy</li>
+            <li>
+              <i class="fas fa-users"></i> Elenco: Ryan Reynolds | Hugh
+              Jackman | Channing Tatum | Emma Corrin |
+            </li>
+            <li><i class="fas fa-scroll"></i>Sinopse</li>
+            <p>
+              Em "Deadpool & Wolverine", Wade Wilson (Deadpool) leva uma vida
+              tranquila como civil após seus dias como mercenário. No entanto,
+              quando uma ameaça existencial surge, Wade relutantemente veste seu
+              traje de Deadpool, recrutando Logan (Wolverine) para enfrentá-la.
+              Juntos, eles embarcam em uma aventura repleta de ação, humor
+              irreverente e elementos do multiverso.
+            </p>
+
+            <div class="container-movie-actions">
+              <div id="action-play">
+                <img src="../assets/icons/Play.svg" alt="" />
+                <a
+                  href="https://www.disneyplus.com/pt-br/browse/entity-120ae1e6-2240-4924-a4ce-f8de6e28b0b1"
+                  >Assistir agora</a
+                >
+              </div>
+              <div id="action-trailer">
+                <a href="https://www.youtube.com/watch?v=dEbe0rS4Z2A"
+                  >Ver Trailer</a
+                >
+                <img src="../assets/icons/Forward.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="comment-section">
+        <h3>Comentários</h3>
+        <textarea
+          class="comment-input"
+          placeholder="Escreva um comentário"
+          rows="4"
+          cols="50"
+        ></textarea>
+        <button class="comment-button">
+          <i class="far fa-comment"></i> Comentar
+        </button>
+      </div>
+     
+    </main>
+
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/libs.js"></script>
+  </body>
 </html>
