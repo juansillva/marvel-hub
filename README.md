@@ -43,8 +43,9 @@ O **Marvel Hub** é uma aplicação web focada em oferecer uma experiência visu
 
 ## 📸 Preview
 
-![modelo (2)](https://github.com/user-attachments/assets/6c181790-1851-4f48-813a-3400d8f901c0)
-![HOME](https://github.com/user-attachments/assets/d66792fe-6643-4702-921e-7d269b204e7a)
+[![Marvel Hub Preview](https://github.com/user-attachments/assets/6c181790-1851-4f48-813a-3400d8f901c0)](https://hub-marvel.vercel.app/)
+
+
 
 ---
 
